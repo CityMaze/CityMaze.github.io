@@ -4,4 +4,13 @@ body {
     background-position: left top;
     background-image: url(minwt.jpg);
     background-color: black;
+    height:7000px;
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Red;
+    margin-left:10%;
 }
