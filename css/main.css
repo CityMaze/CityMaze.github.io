@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-position: left top;
     background-image: url(minwt.jpg);
-    background-color: #000;
+    background-color: black;
 }
 div#top {
     background-color:aqua;
