@@ -5,11 +5,3 @@ body {
     background-image: url(minwt.jpg);
     background-color: black;
 }
-div#top {
-    background-color:aqua;
-    
-}
-div#top span{
-    color: #fff;
-    font-size: 15px;
-}
