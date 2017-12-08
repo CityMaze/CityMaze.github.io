@@ -5,6 +5,7 @@ body {
     background-image: url(minwt.jpg);
     background-color: black;
     height:7000px;
+<<<<<<< HEAD
 }
 div#top
 {
@@ -31,4 +32,14 @@ div#top
     background-color:Green;
     margin-left:10%;
 }
+=======
+>>>>>>> 854654d0741c5e276979d1075fe28157bd3feeb6
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Red;
+    margin-left:10%;
 }
