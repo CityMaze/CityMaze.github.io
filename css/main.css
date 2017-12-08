@@ -23,6 +23,7 @@ div#top
     background-image: url(minwt.jpg);
     background-color: black;
     height:7000px;
+<<<<<<< HEAD
 }
 div#top
 {
@@ -32,4 +33,43 @@ div#top
     background-color:Green;
     margin-left:10%;
 }
+=======
+<<<<<<< HEAD
+>>>>>>> ea3551e9a9bd38d0487fd1f3a6cdb72a4aaaca92
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Red;
+    margin-left:10%;
+}
+@media screen and (max-width: 480px) {
+    body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url(minwt.jpg);
+    background-color: black;
+    height:7000px;
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Green;
+    margin-left:10%;
+}
+=======
+>>>>>>> 854654d0741c5e276979d1075fe28157bd3feeb6
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Red;
+    margin-left:10%;
 }
