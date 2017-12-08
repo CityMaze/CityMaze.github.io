@@ -4,4 +4,31 @@ body {
     background-position: left top;
     background-image: url(minwt.jpg);
     background-color: black;
+    height:7000px;
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Red;
+    margin-left:10%;
+}
+@media screen and (max-width: 480px) {
+    body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url(minwt.jpg);
+    background-color: black;
+    height:7000px;
+}
+div#top
+{
+    height:80;
+    width:80%;
+    position: fixed;
+    background-color:Green;
+    margin-left:10%;
+}
 }
