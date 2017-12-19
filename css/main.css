@@ -25,12 +25,46 @@ div#top
     width:100%;
     margin:auto;
 }
-.Main{
+#Yuuri{
     height:1000px;
+    width:100%;
+    background-color: green;
+}
+#MuMu{
+    height:1000px;
+    width:100%;
+    background-color: blue;
+}
+#FiveSixZero{
+    height:1000px;
+    width:100%;
+    background-color: purple;
+}
+#MilkTea{
+    height:1000px;
+    width:100%;
+    background-color: yellow;
+}
+#DW{
+    height:1000px;
+    width:100%;
+    background-color: orange;
+}
+#Sniper{
+    height:1000px;
+    width:100%;
+    background-color: pink;
+}
+#Gi{
+    height:1000px;
+    width:100%;
+    background-color: gray;
+}
+#Main{
+    height:1000px;
+    width:100%;
     background-color: white;
 }
-
-
 @media screen and (max-width: 480px) {
     body {
     background-attachment: fixed;
