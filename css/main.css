@@ -1,67 +1,58 @@
 .body 
 {
-    background: url(../img/map.svg) no-repeat center;
+    background: url(../img/map.svg);
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-position: left top;
-    background-color: blue;
+    background-color: black;
+    -webkit-background-size:100%;
+    background-size: 100%;
+    background-position: 0px 1000px;
     height:7000px;
 }
 div#top
 {
-    height:80;
-    width:80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100px;
+    width:100%;
     position: fixed;
-    background-color:Red;
-    margin-left:10%;
+    top: 0;
+    left: 0;
 }
+.topImg
+{
+    vertical-align : middle;
+    width:100%;
+    margin:auto;
+}
+.Main{
+    height:1000px;
+    background-color: white;
+}
+
+
 @media screen and (max-width: 480px) {
     body {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: 0px 1000px;
+    -webkit-background-size:100%;
     background-image: url(minwt.jpg);
     background-color: black;
     height:7000px;
+    background-size: 100%;
+}
+.topImg
+{
+    vertical-align : middle;
+    width:100%;
+    margin:auto;
 }
 div#top
 {
-    height:80;
-    width:80%;
-    position: fixed;
-    background-color:Green;
-    margin-left:10%;
-}
-div#top
-{
-    height:80;
-    width:80%;
-    position: fixed;
-    background-color:Red;
-    margin-left:10%;
-}
-@media screen and (max-width: 480px) {
-    body {
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left top;
-    background-image: url(minwt.jpg);
-    background-color: black;
-    height:7000px;
-}
-div#top
-{
-    height:80;
-    width:80%;
+    background-position: center;
+    width:100%;
     position: fixed;
-    background-color:Green;
-    margin-left:10%;
 }
-div#top
-{
-    height:80;
-    width:80%;
-    position: fixed;
-    background-color:Red;
-    margin-left:10%;
 }
