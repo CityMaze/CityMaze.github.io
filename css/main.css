@@ -1,92 +1,83 @@
-.body 
-{
+.body {
     background: url(../img/map.svg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-color: black;
-    -webkit-background-size:100%;
+    -webkit-background-size: 100%;
     background-size: 100%;
     background-position: 0px 1000px;
-    height:7000px;
+    height: 11000px;
 }
-div#top
-{
+
+.ContentDiv {
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin: 8px 24px 24px 24px;
+    background-color: #FFF;
+    box-shadow: 4px 6px 16px -8px rgba(0,0,0,0.15);
+}
+.LDIV{
+    width:444px;
+}
+.RDIV {
+    width: 1006px;
+}
+    .ContentDiv .maintitle {
+        color: #D9A76A;
+        font-size: 20px;
+        font-weight: 800;
+    }
+div#top {
     background-repeat: no-repeat;
     background-position: center;
-    height:100px;
-    width:100%;
+    height: 100px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
 }
-.topImg
-{
-    vertical-align : middle;
-    width:100%;
-    margin:auto;
+
+.topImg {
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
 }
-#Yuuri{
-    height:1000px;
-    width:100%;
-    background-color: green;
+
+.PeopleArea {
+    height: 1150px;
+    width: 100%;
+    background-color: rgb(37, 37, 38);
 }
-#MuMu{
-    height:1000px;
-    width:100%;
-    background-color: blue;
+
+#Main {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(37, 37, 38);
 }
-#FiveSixZero{
-    height:1000px;
-    width:100%;
-    background-color: purple;
-}
-#MilkTea{
-    height:1000px;
-    width:100%;
-    background-color: yellow;
-}
-#DW{
-    height:1000px;
-    width:100%;
-    background-color: orange;
-}
-#Sniper{
-    height:1000px;
-    width:100%;
-    background-color: pink;
-}
-#Gi{
-    height:1000px;
-    width:100%;
-    background-color: gray;
-}
-#Main{
-    height:1000px;
-    width:100%;
-    background-color: white;
-}
+
 @media screen and (max-width: 480px) {
     body {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 0px 1000px;
-    -webkit-background-size:100%;
-    background-image: url(minwt.jpg);
-    background-color: black;
-    height:7000px;
-    background-size: 100%;
-}
-.topImg
-{
-    vertical-align : middle;
-    width:100%;
-    margin:auto;
-}
-div#top
-{
-    background-repeat: no-repeat;
-    background-position: center;
-    width:100%;
-    position: fixed;
-}
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0px 1000px;
+        -webkit-background-size: 100%;
+        background-image: url(minwt.jpg);
+        background-color: black;
+        height: 7000px;
+        background-size: 100%;
+    }
+
+    .topImg {
+        vertical-align: middle;
+        width: 100%;
+        margin: auto;
+    }
+
+    div#top {
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        position: fixed;
+    }
 }

@@ -4,8 +4,7 @@
         var p = $(window).scrollTop();
         var d = $("#top-floor");
         if (p > t) {//下滚 
-            if (rol - 10 < 0-$("#topimg").height())
-            {
+            if (rol - 10 < 0 - $("#topimg").height()) {
                 $("#top").css("top", 0 - $("#topimg").height());
             } else {
                 rol -= 10;
@@ -13,69 +12,25 @@
             }
         }
         else {//上滚
-            if (rol + 10 >= 0)
-            {
+            if (rol + 10 >= 0) {
                 $("#top").css("top", "0");
             } else {
                 rol += 10;
                 $("#top").css("top", "+=10");
             }
-                
+
         }
         setTimeout(function () { t = p; }, 0);
     });
     // 幫 a.abgne_gotoheader 加上 click 事件
-    $('#P1').click(function () {
+    $('.P').click(function () {
         // 讓捲軸用動畫的方式移動到 0 的位置
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+        var Rank = parseInt($(".p").index(this));
         $body.animate({
-            scrollTop: 1000
-        }, 600);
-        $("#top").css("top", 0 - $("#topimg").height());
-        return false;
-    });
-    $('#P2').click(function () {
-        // 讓捲軸用動畫的方式移動到 0 的位置
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
-            scrollTop: 2000
-        }, 600);
-        $("#top").css("top", 0 - $("#topimg").height());
-        return false;
-    });
-    $('#P3').click(function () {
-        // 讓捲軸用動畫的方式移動到 0 的位置
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
-            scrollTop: 3000
-        }, 600);
-        $("#top").css("top", 0 - $("#topimg").height());
-        return false;
-    });
-    $('#P4').click(function () {
-        // 讓捲軸用動畫的方式移動到 0 的位置
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
-            scrollTop: 4000
-        }, 600);
-        $("#top").css("top", 0 - $("#topimg").height());
-        return false;
-    });
-    $('#P5').click(function () {
-        // 讓捲軸用動畫的方式移動到 0 的位置
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
-            scrollTop: 5000
-        }, 600);
-        $("#top").css("top", 0 - $("#topimg").height());
-        return false;
-    });
-    $('#P6').click(function () {
-        // 讓捲軸用動畫的方式移動到 0 的位置
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-        $body.animate({
-            scrollTop: 6000
-        }, 600);
+            scrollTop: Rank * 1150 + Rank * 10
+        }, 520);
         $("#top").css("top", 0 - $("#topimg").height());
         return false;
     });
@@ -88,5 +43,6 @@
         $("#top").css("top", 0 - $("#topimg").height());
         return false;
     });
+
 });
 
