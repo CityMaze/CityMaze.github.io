@@ -81,3 +81,133 @@ div#top {
         position: fixed;
     }
 }
+
+
+/*--------------------------------------------------
+說明用Tooltip
+<div class="Gtooltip">
+    <a href="javascript:return false;" class="bottom/left/right" yk-message="文字說明">
+        <span>說明</span>
+    </a>    
+</div>
+-------------------------*/
+
+
+.Gtooltip {
+    font-family: Century Gothic,Microsoft JhengHei;
+    font-size: 14px;
+    display: inline;
+
+}
+
+    .Gtooltip > a {
+        display: inline;
+        position: relative;
+        color: #E16689;
+        text-align:left;
+    }
+
+        .Gtooltip > a span {
+            font-size: 14px;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+
+            .Gtooltip > a span:before {
+                content: url('ico/ico_smquetion.png');
+                height: 16px;
+                width: 16px;
+                vertical-align: middle;
+            }
+
+            .Gtooltip > a span.notice {
+                color: #D91616;
+            }
+
+            .Gtooltip > a span.notice:before {
+                content: url('ico/ico_notice.png');
+            }
+
+
+
+        .Gtooltip > a:hover:after {
+            background: #333;
+            background: rgba(0,0,0,.8);
+            border-radius: 5px;
+            bottom: 26px;
+            color: #fff;
+            content: attr(yk-message);
+            left: 20%;
+            padding: 4px 8px;
+            position: absolute;
+            z-index: 2000;
+            width: max-content;
+            height: max-content;
+            max-width: 280px;
+            word-break:break-all;
+        }
+
+        .Gtooltip > a:hover:before {
+            border: solid;
+            border-color: #333 transparent;
+            border-width: 6px 6px 0 6px;
+            bottom: 20px;
+            content: "";
+            left: 50%;
+            position: absolute;
+            z-index: 99;
+        }
+
+
+
+        /*向上(預設向上)*/
+        .Gtooltip > a.top:hover:after {
+            bottom: 130%;
+
+        }
+
+        .Gtooltip > a.top:hover:before {
+            bottom: 100%;
+
+        }
+
+
+        /*向左*/
+        .Gtooltip > a.left:hover:after {
+            top: -10%;
+            left: -240px;
+        }
+
+        .Gtooltip > a.left:hover:before {
+            border-color: transparent transparent transparent #333;
+            border-width: 6px 0px 6px 10.4px;
+            top: 20%;
+            left: -25%;
+        }
+
+
+        /*向右*/
+        .Gtooltip > a.right:hover:after {
+            top: -5%;
+            left: 130%;
+        }
+
+        .Gtooltip > a.right:hover:before {
+            border-color: transparent #333 transparent transparent;
+            border-width: 6px 10.4px 6px 0px;
+            top: 20%;
+            left: 110%;
+        }
+
+
+
+        /*向下*/
+        .Gtooltip > a.bottom:hover:after {
+            top: 130% !important;
+        }
+
+        .Gtooltip > a.bottom:hover:before {
+            border-width: 0px 6px 6px 6px !important;
+            top: 100% !important;
+        }
+
