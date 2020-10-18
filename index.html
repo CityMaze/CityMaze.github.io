@@ -21,10 +21,10 @@
         <div style="display: flex;">
             <div class="ContentDiv LDiv">
                 <span class="maintitle">相關聯結</span><br />
-                <a href="" >1.主世界地圖介紹(尚未完工)</a><br />
+                <a href="">1.主世界地圖介紹(尚未完工)</a><br />
                 <a href="./map/SantaMap.html">2.節日活動地圖</a><br />
-                <a href="" >3.燈塔地圖(尚未開放)</a><br />
-                <a href="" >4.屠龍五年後地圖(尚未開放)</a>
+                <a href="">3.燈塔地圖(尚未開放)</a><br />
+                <a href="./map/FishingMap.html">4.屠龍五年後地圖</a>
             </div>
             <div class="ContentDiv LDiv">
                 <span class="maintitle">支線任務列表</span><br />
@@ -43,11 +43,16 @@
             <div class="ContentDiv RDiv">
                 <span class="maintitle">最新公告</span><br />
                 <div class="Gtooltip">
-                    <a href="javascript:return false;" class="bottom" yk-message="建立了部份主線劇情說明、玩家支線任務清單。">
-                        <span>2020/01/20-網站更新公告</span>
+                    <a href="javascript:return false;" class="bottom" yk-message="增加兩位冒險者，更新套裝訊息。">
+                        <span>2020/10/18-網站更新公告</span>
                     </a>
+                    <br />
                     <a href="javascript:return false;" class="bottom" yk-message="重新規劃整體故事主軸。">
                         <span>2020/06/01-網站更新公告</span>
+                    </a>
+                    <br />
+                    <a href="javascript:return false;" class="bottom" yk-message="建立了部份主線劇情說明、玩家支線任務清單。">
+                        <span>2020/01/20-網站更新公告</span>
                     </a>
                 </div>
             </div>
@@ -74,16 +79,16 @@
         <div style="display: flex;">
             <div class="ContentDiv LDiv">
                 <span class="maintitle">主線任務列表</span><br />
-                                                     <div class="Gtooltip">
-                                                         <!--觸發條件，要有一隻切里貓，收到邀請函後，建立切里的家（並且預設一個至少高為２的門），並且依照邀請函提示完成位於遙遠國度的故事。-->
-                                                         <a href="javascript:return false;" class="bottom" yk-message="於一個遙遠小國，盛行著煉金術">
-                                                             <span>第一章【遙遠的國度】</span>
-                                                         </a>
-                                                         <!---->
-                                                         <a href="javascript:return false;" class="bottom" yk-message="">
-                                                             <span>第二章【】</span>
-                                                         </a>
-                                                     </div>
+                <div class="Gtooltip">
+                    <!--觸發條件，要有一隻切里貓，收到邀請函後，建立切里的家（並且預設一個至少高為２的門），並且依照邀請函提示完成位於遙遠國度的故事。-->
+                    <a href="javascript:return false;" class="bottom" yk-message="於一個遙遠小國，盛行著煉金術">
+                        <span>第一章【遙遠的國度】</span>
+                    </a><br />
+                    <!---->
+                    <a href="javascript:return false;" class="bottom" yk-message=''>
+                        <span>第二章【】</span>
+                    </a>
+                </div>
             </div>
             <div class="ContentDiv LDiv">
                 <span class="maintitle">已完成-支線任務列表</span><br />
@@ -94,11 +99,56 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：抗摔傷血厚、夜視效果-->
                 <!--缺：無親水性、無抗性-->
-                頭盔：【Cherry毛貓耳】<br />
-                衣服：【Cherry氣場】<br />
-                下著：【Cherry毛尾巴】<br />
-                鞋子：【Cherry的肉球】<br />
-                武器：【Cherry牙】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/TakaraiYuuri/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/TakaraiYuuri/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Cherry毛貓耳</a>】
+                </div><br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/TakaraiYuuri/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/TakaraiYuuri/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Cherry氣場</a>】
+                </div><br />
+                下著：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/TakaraiYuuri/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/TakaraiYuuri/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Cherry毛尾巴</a>】
+                </div><br />
+                鞋子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/TakaraiYuuri/鞋子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/TakaraiYuuri/鞋子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Cherry的肉球</a>】
+                </div><br />
+                武器：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/TakaraiYuuri/武器.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/TakaraiYuuri/武器.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Cherry牙</a>】
+                </div><br />
             </div>
         </div>
     </div>
@@ -121,7 +171,16 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：極高抗性-->
                 <!--缺：無血量加成、-->
-                頭盔：【豆干安全頭盔】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/XHaKQX/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/XHaKQX/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的豆干安全頭盔</a>】
+                </div><br />
                 衣服：【】<br />
                 下著：【】<br />
                 鞋子：【】<br />
@@ -161,8 +220,26 @@
                 頭盔：【永恆的貝雷帽】<br />
                 衣服：【永恆的水手服】<br />
                 下著：【永恆的百褶裙】<br />
-                鞋子：【落跑鞋】<br />
-                武器：【NTW_20反器材步槍】<br />
+                鞋子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/GODsniper/鞋子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/GODsniper/鞋子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的仲威落跑鞋</a>】
+                </div><br />
+                武器：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/GODsniper/武器.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/GODsniper/武器.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的NTW_20反器材步槍</a>】
+                </div><br />
 
             </div>
         </div>
@@ -190,11 +267,47 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：高幸運、親水性、水中呼吸與挖掘、反甲-->
                 <!--缺：在陸上很沒用、搞笑武器-->
-                頭盔：【水母腦袋瓜】<br />
-                ：【水母的觸角末端】<br />
-
-                ：【水母的猥褻觸手】<br />
-                武器：【TurritopsisNutricula】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/syo086/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/syo086/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的水母腦袋瓜</a>】
+                </div><br />
+                衣服：【】<br />
+                褲子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/syo086/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/syo086/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的水母的猥褻觸手</a>】
+                </div><br />
+                鞋子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/syo086/鞋子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/syo086/鞋子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的水母的觸角末端</a>】
+                </div><br />
+                武器：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/syo086/武器.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/syo086/武器.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Turritopsis Nutricula</a>】
+                </div><br />
             </div>
         </div>
     </div>
@@ -219,7 +332,16 @@
                 頭盔：<br />
                 衣服：<br />
                 下著：<br />
-                鞋子：【小頭海綿體鞋子】<br />
+                鞋子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/FongLan/鞋子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/FongLan/鞋子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的小頭海綿體鞋子</a>】
+                </div><br />
                 武器：<br />
             </div>
         </div>
@@ -246,10 +368,28 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：高抗投擲物、中防禦、低血量-->
                 <!--缺：搞笑武器-->
-                頭盔：【國造EMBH105頭盔】<br />
-                衣服：【戰術背心】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Wei_Lin0820/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Wei_Lin0820/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Wei_Lin0820國造EMBH105頭盔</a>】
+                </div><br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Wei_Lin0820/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Wei_Lin0820/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Wei_Lin0820戰術背心</a>】
+                </div><br />
                 下著：<br />
-                鞋子：【小頭海綿體鞋子】<br />
+                鞋子：【】<br />
                 武器：【紅色塗裝C4】<br />
 
             </div>
@@ -307,9 +447,36 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：高抗性高血量高防禦高回血-->
                 <!--缺：無任何攻擊加成、不抗摔、不親水、套裝沒有鞋子-->
-                頭盔：【小幽頭上的角】<br />
-                衣服：【小幽的白色T】<br />
-                下著：【小幽小褲褲】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/AyaSoraSaki/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/AyaSoraSaki/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的小幽頭上的角</a>】
+                </div><br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/AyaSoraSaki/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/AyaSoraSaki/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的小幽的白色T</a>】
+                </div><br />
+                下著：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/AyaSoraSaki/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/AyaSoraSaki/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的小幽小褲褲</a>】
+                </div><br />
                 鞋子：套裝沒有鞋子<br />
                 武器：【隙切】<br />
             </div>
@@ -341,11 +508,172 @@
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：高回血、吸血、夜視-->
                 <!--缺：防禦低、無親水、無套裝武器-->
-                頭盔：【茵絲的優雅氣場】<br />
-                衣服：【茵絲的裹胸布】<br />
-                下著：【茵絲的小褲褲】<br />
-                鞋子：【茵絲的馬靴】<br />
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/T_Milktea/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/T_Milktea/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的茵絲的優雅氣場</a>】
+                </div><br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/T_Milktea/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/T_Milktea/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆茵絲的裹胸布</a>】
+                </div><br />
+                下著：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/T_Milktea/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/T_Milktea/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的茵絲的小褲褲</a>】
+                </div><br />
+                鞋子：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/T_Milktea/鞋子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/T_Milktea/鞋子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的茵絲的馬靴</a>】
+                </div><br />
                 武器：此套裝無武器<br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+        </div>
+    </div>
+    <!-- 小捲 -->
+    <div class="PeopleArea" id="小捲">
+        <div class="ContentDiv">
+            <span class="maintitle">角色資訊</span><br />
+            名稱：BobGirl
+        </div>
+        <div class="ContentDiv">
+            <span class="maintitle">故事</span><br />
+            <!--<div class="Gtooltip">
+                <a href="javascript:return false;" class="bottom" yk-message="大圖書館地圖。">
+                    <span>初代世界</span>
+                </a>
+            </div>中的屠龍四英雄之一-->
+        </div>
+        <div style="display: flex;">
+            <div class="ContentDiv LDiv">
+                <span class="maintitle">主線任務列表</span><br />
+                尚無<br />
+            </div>
+            <div class="ContentDiv LDiv">
+                <span class="maintitle">支線任務列表</span><br />
+                尚無<br />
+            </div>
+            <div class="ContentDiv RDiv">
+                <span class="maintitle">特有裝備列表</span><br />
+                <!--優：高速經驗值、弓箭可瞬間移動?、格檔傷害-->
+                <!--缺：血量低、無任何與速度有關的加成-->
+                頭盔：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/BobGirl/帽子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/BobGirl/帽子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的Zero頭盔</a>】
+                </div><br />
+                衣服：【】<br />
+                下著：【】<br />
+                鞋子：【】<br />
+                武器：【擬態相轉移設備】<br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+        </div>
+    </div>
+    <!-- 小胖 -->
+    <div class="PeopleArea" id="小胖">
+        <div class="ContentDiv">
+            <span class="maintitle">角色資訊</span><br />
+            名稱：Funsonboy
+        </div>
+        <div class="ContentDiv">
+            <span class="maintitle">故事</span><br />
+            <!--<div class="Gtooltip">
+                <a href="javascript:return false;" class="bottom" yk-message="大圖書館地圖。">
+                    <span>初代世界</span>
+                </a>
+            </div>中的屠龍四英雄之一-->
+        </div>
+        <div style="display: flex;">
+            <div class="ContentDiv LDiv">
+                <span class="maintitle">主線任務列表</span><br />
+                尚無<br />
+            </div>
+            <div class="ContentDiv LDiv">
+                <span class="maintitle">支線任務列表</span><br />
+                尚無<br />
+            </div>
+            <div class="ContentDiv RDiv">
+                <span class="maintitle">特有裝備列表</span><br />
+                <!--優：只要有新的材質的劍就會有特殊的武器出現-->
+                <!--缺：套裝少、能力差-->
+                頭盔：此套裝無<br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Funsonboy/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Funsonboy/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的俠客裝</a>】
+                </div><br />
+                下著：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Funsonboy/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Funsonboy/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的俠客袴褲</a>】
+                </div><br />
+                鞋子：此套裝無<br />
+                武器：【永恆的魔劍・墮日斬】<br /><!--木劍4 失明-->
+                武器：<div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Funsonboy/武器18.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Funsonboy/武器18.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>【<a href="javascript:return false">永恆的炎邪黯刃</a>】<!--鑽劍18 凋零效果-->
+                </div><br />
+                武器：【永恆的霹雷鳴劍】<br /><!--金劍19 雷鳴效果-->
+                武器：【永恆的刀影破】<br /><!--鐵劍22 劍氣-->
+                武器：<div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Funsonboy/武器27.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Funsonboy/武器27.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的畫影空騰</a>】<!--鑽劍18 凋零效果-->
+                </div><br /><!--石劍27 擊退高飛-->
+                武器：【永恆的刃無鋒】<br /><!--木棒0-->
                 <br />
                 <br />
                 <br />
@@ -387,35 +715,37 @@
                     <span>回到首頁</span><a id="P1" class="P" href="#" title="回到首頁"><img src="img/linkUrl/LU.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於悠里</span><a id="P2" class="P" href="#" title="關於悠里"><img src="img/linkUrl/Yuuri.png" /></a>
+                    <span>關於悠里</span><a id="P2" class="P" href="#" title="關於悠里"><img src="img/linkUrl/TakaraiYuuri.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於豆干</span><a id="P3" class="P" href="#" title="關於豆干"><img src="img/linkUrl/Yuuri.png" /></a>
+                    <span>關於豆干</span><a id="P3" class="P" href="#" title="關於豆干"><img src="img/linkUrl/XHaKQX.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於阿北</span><a id="P4" class="P" href="#" title="關於阿北"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於阿北</span><a id="P4" class="P" href="#" title="關於阿北"><img src="img/linkUrl/GODsniper.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於水母</span><a id="P5" class="P" href="#" title="關於水母"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於水母</span><a id="P5" class="P" href="#" title="關於水母"><img src="img/linkUrl/syo086.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於小頭</span><a id="P6" class="P" href="#" title="關於小頭"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於小頭</span><a id="P6" class="P" href="#" title="關於小頭"><img src="img/linkUrl/FongLan.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於韋霖</span><a id="P7" class="P" href="#" title="關於韋霖"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於韋霖</span><a id="P7" class="P" href="#" title="關於韋霖"><img src="img/linkUrl/Wei_Lin0820.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於乖乖</span><a id="P8" class="P" href="#" title="關於乖乖"><img src="img/linkUrl/LU.png" /></a>
-                </li>
-
-                <li class="active">
-                    <span>關於小幽</span><a id="P9" class="P" href="#" title="關於小幽"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於乖乖</span><a id="P8" class="P" href="#" title="關於乖乖"><img src="img/linkUrl/Rad_Army.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於珍奶</span><a id="P10" class="P" href="#" title="關於珍奶"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於小幽</span><a id="P9" class="P" href="#" title="關於小幽"><img src="img/linkUrl/Ayasorasaki.png" /></a>
                 </li>
                 <li class="active">
-                    <span>關於龍翼</span><a id="P11" href="#" title="關於龍翼"><img src="img/linkUrl/LU.png" /></a>
+                    <span>關於珍奶</span><a id="P10" class="P" href="#" title="關於珍奶"><img src="img/linkUrl/T_Milktea.png" /></a>
+                </li>
+                <li class="active">
+                    <span>關於小捲</span><a id="P11" class="P" href="#" title="關於小捲"><img src="img/linkUrl/BobGirl.png" /></a>
+                </li>
+                <li class="active">
+                    <span>關於小胖</span><a id="P12" class="P" href="#" title="關於小胖"><img src="img/linkUrl/Funsonboy.png" /></a>
                 </li>
             </ul>
         </div>

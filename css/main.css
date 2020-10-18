@@ -144,7 +144,7 @@ div#top {
             width: max-content;
             height: max-content;
             max-width: 280px;
-            word-break:break-all;
+            word-break: break-all;
         }
 
         .Gtooltip > a:hover:before {
@@ -211,3 +211,50 @@ div#top {
             top: 100% !important;
         }
 
+
+
+
+.tooltip2 {
+    /*max-width: 28px;*/
+    padding: 0px !important;
+    /*margin-left: 15px;
+    margin-right: 15px;*/
+    position: relative;
+    display: inline-block;
+    /*z-index: 1000;*/
+    /*border-bottom: 1px dotted black;*/
+}
+
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width: auto;
+        min-width: 160px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        border: 3px;
+        margin-top: 25px;
+        margin-left: -50px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 560;
+        height: 186px;
+    }
+
+.tooltiptext2 label {
+    overflow: hidden;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin: 0px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+    
