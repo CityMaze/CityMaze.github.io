@@ -43,6 +43,5 @@
         $("#top").css("top", 0 - $("#topimg").height());
         return false;
     });
-
+    HideDM();
 });
-
