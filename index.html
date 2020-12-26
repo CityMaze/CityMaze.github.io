@@ -5,45 +5,75 @@
     <meta HTTP-EQUIV="EXPIRES" CONTENT="0">
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/bottombar.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="body">
     <div id="" href="#">
+        <input id="text1" TYPE="text" name="text1"  style="width:100%; color:red" />
         <img id="topimg" class="topImg" src="img/banner-01.svg" />
-        <span id="top-floor">0</span>
+        <SCRIPT LANGUAGE="JavaScript">
+            var text1 = "☆☆☆ 最速公告 ☆☆☆ 2020-12-26 新增【後街系列任務】 的 後街吉姆 相關任務 歡迎到釣魚地圖找他看看喔！";
+            text1 = text1 + '　　　　                                    　　　                                       　　　             　　　          　　　';
+            var BarText = "☆☆☆ 最速公告 ☆☆☆ 2020-12-26 新增【後街系列任務】 的 後街吉姆 相關任務 歡迎到釣魚地圖找他看看喔！";
+            BarText = BarText + '　　　　                                　　　                                             　　　      　　　               　　　';
+            var IncNo = 2;
+            MoveBar();
+            function MoveBar() {
+                BarText = BarText.substring(IncNo, BarText.length) + BarText.substring(0, IncNo);
+                text1 = text1.substring(IncNo, text1.length) + text1.substring(0, IncNo);
+                $('#text1').val(text1);
+                window.status = BarText;
+                setTimeout('MoveBar()', 400); // 0.5 秒
+            }
+        </SCRIPT>
+        <!--<span id="top-floor">0</span>-->
     </div>
     <div class="PeopleArea" id="Main">
         <div style="display: flex;">
             <div class="ContentDiv LDiv">
-                <span class="maintitle">相關聯結</span><br />
-                <a href="">1.主世界地圖介紹(尚未完工)</a><br />
-                <a href="./map/SantaMap.html">2.節日活動地圖</a><br />
-                <a href="">3.燈塔地圖(尚未開放)</a><br />
-                <a href="./map/FishingMap.html">4.屠龍五年後地圖</a><br />
-                <a href="./mission/AutoMission.html">5.自動任務列表</a>
-            </div>
-            <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
-                <div class="Gtooltip">
-                    <a href="javascript:return false;" class="bottom" yk-message="【怕岩漿的殭屍豬人】、【村莊英雄】、【想吃巧克力球的奇犽】">
-                        <span>2020-01月任務清單</span>
-                    </a>
-                </div>
-                <br />
-                <div class="Gtooltip">
-                    <a href="javascript:return false;" class="bottom" yk-message="【HK416的愛】、【海女的家】、【凍僵的人】">
-                        <span>2019-12月任務清單</span>
-                    </a>
-                </div>
+                <span class="maintitle">快速聯結</span><br />
+                <a href="./map/MainMap.html">【大教堂地圖】介紹</a><br />
+                <a href="./map/TWMap.html">【大圖書館地圖】介紹</a><br />
+                <a href="./map/FishingMap.html">【釣魚地圖】介紹</a><br />
+                <a href="./map/SantaMap.html">【聖誕地圖】介紹</a><br />
+                <a href="./map/DWSeaMap.html">【龍翼海邊地圖】介紹</a><br />
+                <a href="./map/BuildMap.html">【蓋猜迴廊地圖】介紹</a><br />
+                <a href="./mission/AutoMission.html">全自動任務列表</a><br />
+                <a href="./mission/AutoMission.html">全特殊道具列表</a>
             </div>
             <div class="ContentDiv RDiv">
+                <span class="maintitle">近期支線任務列表</span>
+                <br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="NPC自動任務，無須回報Line群組">
+                        <span>釣魚地圖 -【後街吉姆的金飾交易】</span>
+                    </a>
+                    <br />
+                    <a href="javascript:return false;" class="bottom" yk-message="NPC自動任務，無須回報Line群組">
+                        <span>釣魚地圖 -【斗內未來實驗室】</span>
+                    </a>
+                    <br />
+                    <a href="javascript:return false;" class="bottom" yk-message="NPC自動任務，無須回報Line群組">
+                        <span>大圖書館地圖 -【龍少女的飢餓】</span>
+                    </a>
+                    <br />
+                </div>
+            </div>
+            <div class="ContentDiv LDiv">
                 <span class="maintitle">最新公告</span><br />
                 <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="調整角色部分裝備、新增任務【後街吉姆的金飾交易】。">
+                        <span>2020/12/26-網站更新公告</span>
+                    </a>
+                    <br />
                     <a href="javascript:return false;" class="bottom" yk-message="增加角色名稱顯示、當前伺服器模組簡易介紹、自動任務專區。">
                         <span>2020/10/25-網站更新公告</span>
                     </a>
@@ -63,7 +93,11 @@
             </div>
         </div>
         <div class="ContentDiv">
-            本伺服器之IP位置請於Line群組詢問～謝謝～
+            本伺服器之IP位置請於Line群組筆記本中查看～謝謝～<br />
+            伺服器建議事項<br />
+            1.建議不要自主蓋地獄門，有需要的話可於群組聯絡管理員由管理員協助建立，可以先蓋好你心目中的門的樣子。<br />
+            2.目前伺服器有以下幾張地圖【大教堂】、【大圖書館】、【釣魚】、【聖誕】、【龍翼海邊】、【蓋猜迴廊】<br />
+            3.有任何需要或者請求皆可於LINE群組呼叫管理員~
         </div>
 
     </div>
@@ -77,7 +111,7 @@
                     <span>(?)</span>
                 </a>
             </div>
-            ：TakaraiYuuri<br />
+            ：悠里<br />
         </div>
         <div class="ContentDiv">
             <span class="maintitle">故事</span><br />
@@ -102,9 +136,21 @@
                 </div>
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">已完成-支線任務列表</span><br />
-                【怕岩漿的殭屍豬人】：Clear<br />
-                【海女的家】：Clear
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得鞋子<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="建立於靠海或湖，並且至少要有燈塔">
+                        <span>【公共建設】</span>
+                    </a>：建立港口，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -167,13 +213,13 @@
     <div class="PeopleArea" id="豆干">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：XHaKQX
+            名稱：XHaKQX<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
                 </a>
             </div>
-            ：XHaKQX<br />
+            ：瘋狂豆干<br />
         </div>
         <div style="display: flex;">
             <div class="ContentDiv LDiv">
@@ -181,8 +227,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">已完成-支線任務列表</span><br />
-                【凍僵的人】：Clear
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得頭盔<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有瀑布與男、女浴跟混浴。">
+                        <span>【公共建設】</span>
+                    </a>：建立溫泉會館，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -198,10 +257,19 @@
                     </span>
                     【<a href="javascript:return false">永恆的豆干安全頭盔</a>】
                 </div><br />
-                衣服：【】<br />
-                下著：【】<br />
-                鞋子：【】<br />
-                武器：【】<br />
+                衣服：【永恆的八七級SuperDry衝鋒衣】<br />
+                下著：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/XHaKQX/褲子.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/XHaKQX/褲子.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">永恆的撿蚵仔兼洗褲</a>】
+                </div><br />
+                鞋子：【永恆的墮落城市LaNew釘鞋】<br />
+                武器：【永恆的白金之星】<br />
             </div>
         </div>
     </div>
@@ -209,7 +277,7 @@
     <div class="PeopleArea" id="阿北">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：GODsniper
+            名稱：GODsniper<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -231,10 +299,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">已完成-支線任務列表</span><br />
-                <!--巧克力球可以在各個副本中的隱藏商人買到-->
-                【想吃巧克力球的奇犽】<br />
-                【村莊勇者】
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得？？？<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有各種不同的花以及圍籬與墓碑。">
+                        <span>【公共建設】</span>
+                    </a>：建立公墓，已完成，取得？？？<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有五個鐵匠村民，並且完成後村民可存活一周。">
+                        <span>【村莊建設】</span>
+                    </a>：建立煉金街道<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -271,7 +350,7 @@
     <div class="PeopleArea" id="水母">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：syo086
+            名稱：syo086<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -290,7 +369,21 @@
                 <br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得鞋子<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="大小需要能容納伺服器所有成員。">
+                        <span>【公共建設】</span>
+                    </a>：建立釣魚大賽場地，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -344,7 +437,7 @@
     <div class="PeopleArea" id="小頭">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：FongLan
+            名稱：FongLan<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -358,15 +451,29 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【蓋家】任務，才可進行。">
+                        <span>【公共建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：該裝備的獨有特性極高-->
                 <!--缺：其他附加屬性很低、搞笑武器-->
-                頭盔：<br />
-                衣服：<br />
-                下著：<br />
+                頭盔：【永恆的颯爽飄揚頭毛】<br />
+                衣服：【永恆的楓香獨秀上衣】<br />
+                下著：【永恆的嵐霏澈骨筆褲】<br />
                 鞋子：
                 <div class="tooltip2">
                     <span class="tooltiptext2">
@@ -377,7 +484,8 @@
                     </span>
                     【<a href="javascript:return false">永恆的小頭海綿體鞋子</a>】
                 </div><br />
-                武器：<br />
+                武器：【彩虹羊毛三原色CMY】<br /><!--顏料-->
+                武器：【彩虹羊毛三原色RGB】<br /><!--顏料-->
             </div>
         </div>
     </div>
@@ -385,7 +493,7 @@
     <div class="PeopleArea" id="韋霖">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：Wei_Lin0820
+            名稱：Wei_Lin0820<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -403,7 +511,21 @@
                 </div>
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得？？？<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="？？？？。">
+                        <span>【公共建設】</span>
+                    </a>：建立瞭望台，已完成，取得？？？<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有五位村民，不一定要有職業，完成後必須存活超過一周。">
+                        <span>【村莊建設】</span>
+                    </a>：建立市場，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -429,10 +551,9 @@
                     </span>
                     【<a href="javascript:return false">永恆的Wei_Lin0820戰術背心</a>】
                 </div><br />
-                下著：<br />
-                鞋子：【】<br />
+                下著：【永恆的Wei_Lin0820超透氣筆袋工作褲】<br />
+                鞋子：【永恆的Wei_Lin0820率性黑軍靴】<br />
                 武器：【紅色塗裝C4】<br />
-
             </div>
         </div>
     </div>
@@ -440,7 +561,7 @@
     <div class="PeopleArea" id="乖乖">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：Rad_Army
+            名稱：Rad_Army<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -454,7 +575,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【蓋家】任務，才可進行。">
+                        <span>【公共建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -464,7 +599,7 @@
                 衣服：【永恆的瑞克老爺的水藍色T恤】<br />
                 下著：【永恆的雞與牛爸爸】<br />
                 鞋子：【永恆的劍客貓雨靴】<br />
-                武器：【】<br />
+                武器：【永恆的淚眼魯卡鐵鏟】<br />
             </div>
         </div>
     </div>
@@ -472,7 +607,7 @@
     <div class="PeopleArea" id="小幽">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：AyaSoraSaki
+            名稱：AyaSoraSaki<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -494,7 +629,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得衣服<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有２０個書櫃，並且在水下面">
+                        <span>【公共建設】</span>
+                    </a>：建立水下圖書館，已完成，取得下著<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="至少要有五個村民可無職業，並且要有龍頭，完成後，村民必須存活超過一周。">
+                        <span>【村莊建設】</span>
+                    </a>：建立屠龍廣場，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -539,7 +688,7 @@
     <div class="PeopleArea" id="珍奶">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：T_Milktea
+            名稱：T_Milktea<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -561,7 +710,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【蓋家】任務，才可進行。">
+                        <span>【公共建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -619,7 +782,7 @@
     <div class="PeopleArea" id="小捲">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：BobGirl
+            名稱：BobGirl<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -641,8 +804,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
-                尚無<br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，已完成，取得頭盔<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="需用紅磚製作，必須有火爐。">
+                        <span>【公共建設】</span>
+                    </a>：建立窯烤比薩餐廳，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -658,14 +834,13 @@
                     </span>
                     【<a href="javascript:return false">永恆的Zero頭盔</a>】
                 </div><br />
-                衣服：【永恆的】<br />
-                下著：【永恆的】<br />
-                鞋子：【永恆的】<br />
+                衣服：【永恆的C2白色拘束服】<br />
+                下著：此套裝無<br />
+                鞋子：【永恆的C2白色低跟鞋】<br />
                 武器：【永恆的擬態相轉移設備】<br />
                 <br />
                 <br />
                 <br />
-
             </div>
         </div>
     </div>
@@ -673,7 +848,7 @@
     <div class="PeopleArea" id="小胖">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：Funsonboy
+            名稱：Funsonboy<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -701,8 +876,21 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
-                尚無<br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立家。">
+                        <span>【蓋家】</span>
+                    </a>：建立自家，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【蓋家】任務，才可進行。">
+                        <span>【公共建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【公共建設】任務，才可進行。">
+                        <span>【村莊建設】</span>
+                    </a>：尚未派發<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【村莊建設】任務，才可進行。">
+                        <span>【？？？】</span>
+                    </a>：尚未派發<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
@@ -762,7 +950,7 @@
     <div class="PeopleArea" id="龍翼">
         <div class="ContentDiv">
             <span class="maintitle">角色資訊</span><br />
-            名稱：???
+            名稱：???<br />
             角色名稱<div class="Gtooltip">
                 <a href="javascript:return false;" class="bottom" yk-message="【插件功能】於世界中顯示的名稱，如需設定請洽管理員。">
                     <span>(?)</span>
@@ -776,17 +964,40 @@
                 尚無<br />
             </div>
             <div class="ContentDiv LDiv">
-                <span class="maintitle">支線任務列表</span><br />
+                <span class="maintitle">第一期任務進度</span><br />
+                <div class="Gtooltip">
+                    <a href="javascript:return false;" class="bottom" yk-message="建立龍下町。">
+                        <span>【蓋龍下町】</span>
+                    </a>：建立自家，執行中<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【蓋龍下町】任務，才可進行。">
+                        <span>【獨自屠龍】</span>
+                    </a>：尚未開始<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【獨自屠龍】任務，才可進行。">
+                        <span>【建立村莊】</span>
+                    </a>：尚未開始<br />
+                    <a href="javascript:return false;" class="bottom" yk-message="須完成【建立村莊】任務，才可進行。">
+                        <span>【完成副本，龍之心】</span>
+                    </a>：尚未開始<br />
+                </div>
             </div>
             <div class="ContentDiv RDiv">
                 <span class="maintitle">特有裝備列表</span><br />
                 <!--優：近乎萬能的服裝了...-->
                 <!--缺：無套裝效果、惡搞武器-->
                 頭盔：此套裝無頭盔<br />
-                衣服：【龍翼專用斗篷】<br />
+                衣服：
+                <div class="tooltip2">
+                    <span class="tooltiptext2">
+                        <a data-featherlight="image" href="img/Louis/衣服.png" target="_blank">
+                            <img onerror="SetError(this);" src="img/Louis/衣服.png">
+                        </a>
+                        <label><!--說明--></label>
+                    </span>
+                    【<a href="javascript:return false">龍翼專用斗篷</a>】
+                </div><br />
                 下著：此套裝無下著<br />
                 鞋子：此套裝無靴子<br />
-                武器：【80%巧克力】<br />
+                武器：此套裝無武器<br />
             </div>
         </div>
     </div>
